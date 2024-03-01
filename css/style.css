@@ -1,0 +1,150 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr; /* single column layout */
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* spaces between photos */
+    padding: 20px;
+}
+
+.photo img {
+    width: 100%; /* ensure images are fully responsive within their containers */
+    height: auto; /* maintain aspect ratio */
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* center navigation items */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* adjust gap beteween navigation items */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* show hamburger menu */
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* initially hide navigation items */
+    }
+
+    /* when clicking the hamburger menu, use javascript to toggle this class to display the items */
+    nav ul.active {
+        display: flex; /* display navigation items in a column */
+    }
+}
+
+.slider {
+    margin: 50px auto;
+    width: 50%;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background: #888;
+    padding: 10px 30px;
+    font-size: 20px;
+    color: #ddd;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.btn:hover{
+    background: #111;
+}

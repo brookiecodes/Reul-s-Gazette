@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link ref="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="photo-gallery">
+        <!--repeat for each photo-->
+        <div>
+            <div class="slider">
+                <div class="img-box">
+                    <img src="Images/Funny Story.jfif" alt="" class="slider-img">
+                </div>
+                <button class="btn" onclick="prev()">Prev</button>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
+        </div>
+        <nav>
+            <div class="hamburger"> ☰ </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

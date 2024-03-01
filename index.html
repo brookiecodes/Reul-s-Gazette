@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reul's Gazette</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1> Reul's Gazette</h1>
+        <nav>
+            <div class="hamburger"> ☰ </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-article">
+            <h2>New Virus On The Rise?!</h2>
+            <img src="Images/needle.jpg" width="350px">
+            <p>Only a couple months into 2023 and there is already growing concern for a new strain of chrontonitis that could prove fatal to many citizens around the globe. The CDC is tracking and investigating this new strain's appearance and have issued an emergency countrywide lockdown. They are urging people to stay indoors to minimize the spread of this infectious disease as they work to find a suitable cure. Many citizens are refusing to stay indoors and are even issuing statewide protest in countless cities across the nation. With this division of sentiment causing a riff throughout the country, people are fearful of not only each other, but also this virus threatening their lives as it continues to spread. We urge our readers to stay inside and protected at all times. </p>
+        </section>
+        <section class="latest news">
+            <h2>Latest News</h2>
+            <p>This just in! World renowned actress, Kaitlyn Jules, dies at age 25. She was found in her beachside villa in California yesterday night and pronounced dead at the hospital a couple hours later. Investigators suspect she was murdered on account of the bloody knife and footprints left at the crime scene. The footprints were deemed too big to match Mrs. Jules' shoe size. Further investigation will be conducted under the Los Angeles Police Departement undertaking this case. More information will be revealed in the coming weeks as investigation proceeds, and our hearts go out to the actress and her greiving fans and family in this time of great loss.  </p>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function(){
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+
+    <footer>
+        <p>Contact us at bbreul2@gmail.com</p>
+    </footer>
+    
+</body>
+</html>
